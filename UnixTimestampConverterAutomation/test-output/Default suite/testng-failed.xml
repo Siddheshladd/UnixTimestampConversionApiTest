@@ -5,9 +5,9 @@
     <classes>
       <class name="api.test.UnixTimeConversionTest">
         <methods>
+          <include name="testLargeTSValue"/>
           <include name="testNegativeTS"/>
           <include name="testEmptyDateString"/>
-          <include name="testConvertFromUnixTimeStampToDate"/>
           <include name="setup"/>
           <include name="testInvalidDateString"/>
         </methods>

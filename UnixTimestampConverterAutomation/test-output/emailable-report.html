@@ -9,17 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">5,415</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">6,224</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">api.test.UnixTimeConversionTest</td><td><a href="#m0">testConvertFromUnixTimeStampToDate</a></td><td rowspan="1">1684494090470</td><td rowspan="1">1053</td></tr><tr class="failedeven"><td><a href="#m1">testEmptyDateString</a></td><td rowspan="1">1684494092071</td><td rowspan="1">599</td></tr><tr class="failedeven"><td><a href="#m2">testInvalidDateString</a></td><td rowspan="1">1684494091552</td><td rowspan="1">506</td></tr><tr class="failedeven"><td><a href="#m3">testNegativeTS</a></td><td rowspan="1">1684494092677</td><td rowspan="1">525</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">api.test.UnixTimeConversionTest</td><td><a href="#m4">testConvertFromDateToUnixTimeStamp</a></td><td rowspan="1">1684494088482</td><td rowspan="1">1897</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">api.test.UnixTimeConversionTest</td><td><a href="#m0">testEmptyDateString</a></td><td rowspan="1">1684496295323</td><td rowspan="1">601</td></tr><tr class="failedeven"><td><a href="#m1">testInvalidDateString</a></td><td rowspan="1">1684496294705</td><td rowspan="1">605</td></tr><tr class="failedeven"><td><a href="#m2">testLargeTSValue</a></td><td rowspan="1">1684496296552</td><td rowspan="1">602</td></tr><tr class="failedeven"><td><a href="#m3">testNegativeTS</a></td><td rowspan="1">1684496295933</td><td rowspan="1">611</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">api.test.UnixTimeConversionTest</td><td><a href="#m4">testConvertFromDateToUnixTimeStamp</a></td><td rowspan="1">1684496291649</td><td rowspan="1">1844</td></tr><tr class="passedeven"><td><a href="#m5">testConvertFromUnixTimeStampToDate</a></td><td rowspan="1">1684496293612</td><td rowspan="1">1082</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">api.test.UnixTimeConversionTest#testConvertFromUnixTimeStampToDate</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [200] but found [509]
+<h2>Default test</h2><h3 id="m0">api.test.UnixTimeConversionTest#testEmptyDateString</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [2023-38-19 10:38:15] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:839)
-	at org.testng.Assert.assertEquals(Assert.java:849)
-	at api.test.UnixTimeConversionTest.testConvertFromUnixTimeStampToDate(UnixTimeConversionTest.java:64)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at api.test.UnixTimeConversionTest.testEmptyDateString(UnixTimeConversionTest.java:125)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -49,13 +49,13 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">api.test.UnixTimeConversionTest#testEmptyDateString</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [2023-01-19 10:01:32] but found [false]
+<h3 id="m1">api.test.UnixTimeConversionTest#testInvalidDateString</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Invalid Input Date] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at api.test.UnixTimeConversionTest.testEmptyDateString(UnixTimeConversionTest.java:112)
+	at api.test.UnixTimeConversionTest.testInvalidDateString(UnixTimeConversionTest.java:99)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -85,13 +85,13 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">api.test.UnixTimeConversionTest#testInvalidDateString</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Invalid Timestamp] but found [false]
+<h3 id="m2">api.test.UnixTimeConversionTest#testLargeTSValue</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Invalid Timestamp/Out of range] but found [&quot;318857-05-20 05:46:39&quot;]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at api.test.UnixTimeConversionTest.testInvalidDateString(UnixTimeConversionTest.java:86)
+	at api.test.UnixTimeConversionTest.testLargeTSValue(UnixTimeConversionTest.java:170)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -127,7 +127,7 @@
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at api.test.UnixTimeConversionTest.testNegativeTS(UnixTimeConversionTest.java:136)
+	at api.test.UnixTimeConversionTest.testNegativeTS(UnixTimeConversionTest.java:147)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,5 +158,6 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">api.test.UnixTimeConversionTest#testConvertFromDateToUnixTimeStamp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">api.test.UnixTimeConversionTest#testConvertFromUnixTimeStampToDate</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

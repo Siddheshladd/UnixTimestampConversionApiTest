@@ -1,7 +1,9 @@
 package api.test;
 
 import io.restassured.RestAssured;
+
 import io.restassured.http.ContentType;
+import io.restassured.http.Cookie;
 import io.restassured.response.Response;
 
 import java.io.UnsupportedEncodingException;
@@ -17,12 +19,20 @@ import org.testng.annotations.Test;
 
 import api.endpoints.Routes;
 
+import io.restassured.http.Cookies;
+
+
+
+
 public class UnixTimeConversionTest {
 
 	@BeforeClass
 	public static void setup() {
 		Routes url = new Routes();
 		RestAssured.baseURI = url.BASE_URL;
+
+
+
 
 	}
 
@@ -31,11 +41,11 @@ public class UnixTimeConversionTest {
 		String dateString = "2016-01-01T02:03:22";
 		long expectedUnixTimeStamp = 1451613802;
 
-		Response response = RestAssured.given().urlEncodingEnabled(true).header("User-Agent",
-				"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
+		Response response = RestAssured.given().urlEncodingEnabled(true)
+				.header("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
 				.queryParam("cached").queryParam("s", dateString)
 				.accept(ContentType.JSON)
-//				.log().all() //This logs the request 
+				.relaxedHTTPSValidation("TLS")
 				.get();
 
 		int statusCode = response.getStatusCode();
@@ -53,7 +63,10 @@ public class UnixTimeConversionTest {
 		long unixTimeStamp = 1451613802;
 		String expectedDateString = "2016-01-01 02:03:22";
 
-		Response response = RestAssured.given().queryParam("cached").queryParam("s", unixTimeStamp)
+		Response response = RestAssured.given()
+				.header("User-Agent","Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
+				.queryParam("cached").queryParam("s", unixTimeStamp)
+				.relaxedHTTPSValidation("TLS")
 				.accept(ContentType.JSON)
 				.get();
 
@@ -118,8 +131,6 @@ public class UnixTimeConversionTest {
 		long negativeTimeStamp = -1451613802;
 		String expectedResult = "Invalid Timestamp";
 		
-//		Instant expectedunixTimestamp = Instant.now();
-
 		Response response = RestAssured.given()
 				.header("User-Agent",
 				"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3")
@@ -136,7 +147,7 @@ public class UnixTimeConversionTest {
 		Assert.assertEquals(actualTimeStampString, expectedResult);
 	}
 	
-	@Test(priority = 6, description = "Converting a Unix timestamp with a negative value")
+	@Test(priority = 6, description = "Converting a Unix timestamp with a Large value")
 
 	public void testLargeTSValue() {
 		long largeTimeStamp = 9999999999999L;

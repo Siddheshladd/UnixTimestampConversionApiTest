@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-19T12:10:33 VUT" name="api.test.UnixTimeConversionTest" finished-at="2023-05-19T12:10:37 VUT" duration-ms="4037">
+    <groups>
+    </groups>
+    <test started-at="2023-05-19T12:10:33 VUT" name="Command line test" finished-at="2023-05-19T12:10:37 VUT" duration-ms="4037">
+      <class name="api.test.UnixTimeConversionTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.UnixTimeConversionTest@6b695b06]" started-at="2023-05-19T12:10:33 VUT" name="setup" finished-at="2023-05-19T12:10:34 VUT" duration-ms="654" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testConvertFromDateToUnixTimeStamp()[pri:0, instance:api.test.UnixTimeConversionTest@6b695b06]" started-at="2023-05-19T12:10:34 VUT" name="testConvertFromDateToUnixTimeStamp" finished-at="2023-05-19T12:10:36 VUT" duration-ms="1734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConvertFromDateToUnixTimeStamp -->
+        <test-method signature="testConvertFromUnixTimeStampToDate()[pri:0, instance:api.test.UnixTimeConversionTest@6b695b06]" started-at="2023-05-19T12:10:36 VUT" name="testConvertFromUnixTimeStampToDate" finished-at="2023-05-19T12:10:36 VUT" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testConvertFromUnixTimeStampToDate -->
+        <test-method signature="testInvalidDateString()[pri:0, instance:api.test.UnixTimeConversionTest@6b695b06]" started-at="2023-05-19T12:10:36 VUT" name="testInvalidDateString" finished-at="2023-05-19T12:10:37 VUT" duration-ms="1245" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidDateString -->
+      </class> <!-- api.test.UnixTimeConversionTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- api.test.UnixTimeConversionTest -->
+</testng-results>

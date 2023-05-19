@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="api.test.UnixTimeConversionTest" time="3.272" errors="0" skipped="0">
+<testsuite tests="3" failures="3" name="api.test.UnixTimeConversionTest" time="4.246" errors="0" skipped="0">
   <properties>
     <property name="jansi.mode" value="force"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="17.0.6+10"/>
     <property name="sun.boot.library.path" value="C:\Users\SIDDHESH\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\SIDDHESH\eclipse-workspace\UnixTimestampConverterAutomation"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\SIDDHESH\git\UnixTimestampConversionAPIProj\UnixTimestampConverterAutomation"/>
     <property name="java.vm.vendor" value="Eclipse Adoptium"/>
     <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\SIDDHESH\eclipse-workspace\UnixTimestampConverterAutomation"/>
+    <property name="user.dir" value="C:\Users\SIDDHESH\git\UnixTimestampConversionAPIProj\UnixTimestampConverterAutomation"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="17.0.6+10"/>
     <property name="os.arch" value="amd64"/>
@@ -26,9 +26,9 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Users\SIDDHESH\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf15845108744589017043.tmp"/>
+    <property name="classworlds.conf" value="C:\Users\SIDDHESH\eclipse-workspace\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf16351745956068813033.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Users\SIDDHESH\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Users/SIDDHESH/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/SIDDHESH/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\Users\SIDDHESH\AppData\Local\Programs\Python\Python36-32\;C:\Users\SIDDHESH\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-16.0.2bin;C:\Program Files\apache-maven-3.8.2bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\SIDDHESH\AppData\Local\Microsoft\WindowsApps;C:\Users\SIDDHESH\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SIDDHESH\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;C:\Program Files\JetBrains\PyCharm 2021.2\bin;C:\Users\SIDDHESH\AppData\Local\GitHubDesktop\bin;C:\adb;C:\Program Files (x86)\Micro Focus\LoadRunner\bin\Silk\Silk Performer 21.0;C:\Users\SIDDHESH\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\SIDDHESH\AppData\Local\Programs\Python\Python36-32\;C:\Users\SIDDHESH\AppData\Local\Microsoft\WindowsApps;C:\Users\SIDDHESH\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SIDDHESH\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;;C:\Program Files\JetBrains\PyCharm 2021.2\bin;;C:\Users\SIDDHESH\AppData\Local\GitHubDesktop\bin;C:\windows\system32;;."/>
+    <property name="java.library.path" value="C:\Users\SIDDHESH\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Users\SIDDHESH\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre\bin;C:/Users/SIDDHESH/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin/server;C:/Users/SIDDHESH/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729/jre/bin;C:\Users\SIDDHESH\AppData\Local\Programs\Python\Python36-32\;C:\Users\SIDDHESH\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk-16.0.2bin;C:\Program Files\apache-maven-3.8.2bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\SIDDHESH\AppData\Local\Microsoft\WindowsApps;C:\Users\SIDDHESH\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SIDDHESH\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;C:\Program Files\JetBrains\PyCharm 2021.2\bin;C:\Users\SIDDHESH\AppData\Local\GitHubDesktop\bin;C:\adb;C:\Program Files (x86)\Micro Focus\LoadRunner\bin\Silk\Silk Performer 21.0;C:\Users\SIDDHESH\AppData\Local\Programs\Python\Python36-32\Scripts\;C:\Users\SIDDHESH\AppData\Local\Programs\Python\Python36-32\;C:\Users\SIDDHESH\AppData\Local\Microsoft\WindowsApps;C:\Users\SIDDHESH\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\SIDDHESH\AppData\Roaming\npm;C:\Program Files\JetBrains\PyCharm Community Edition 2021.3.1\bin;;C:\Program Files\JetBrains\PyCharm 2021.2\bin;;C:\Users\SIDDHESH\AppData\Local\GitHubDesktop\bin;C:\windows\system32;;."/>
     <property name="jdk.debug" value="release"/>
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -42,7 +42,7 @@
     <property name="java.class.path" value="C:\Users\SIDDHESH\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.8.701.20230209-1606\jars\plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="17"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always test"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B -Dstyle.color=always install"/>
     <property name="java.home" value="C:\Users\SIDDHESH\.p2\pool\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.6.v20230204-1729\jre"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -50,7 +50,7 @@
     <property name="java.version" value="17.0.6"/>
     <property name="native.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
-    <property name="maven.home" value="C:\Users\SIDDHESH\eclipse-workspace\UnixTimestampConverterAutomation\EMBEDDED"/>
+    <property name="maven.home" value="C:\Users\SIDDHESH\git\UnixTimestampConversionAPIProj\UnixTimestampConverterAutomation\EMBEDDED"/>
     <property name="style.color" value="always"/>
     <property name="file.separator" value="\"/>
     <property name="java.version.date" value="2023-01-17"/>
@@ -58,10 +58,65 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="java.vendor.version" value="Temurin-17.0.6+10"/>
-    <property name="m2e.build.project.data.socket.port" value="1398"/>
+    <property name="m2e.build.project.data.socket.port" value="3776"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="api.test.UnixTimeConversionTest" name="testConvertFromDateToUnixTimeStamp" time="1.738"/>
-  <testcase classname="api.test.UnixTimeConversionTest" name="testConvertFromUnixTimeStampToDate" time="0.29"/>
-  <testcase classname="api.test.UnixTimeConversionTest" name="testInvalidDateString" time="1.244"/>
+  <testcase classname="api.test.UnixTimeConversionTest" name="testConvertFromDateToUnixTimeStamp" time="2.695">
+    <failure message="expected [200] but found [509]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [509]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at api.test.UnixTimeConversionTest.testConvertFromDateToUnixTimeStamp(UnixTimeConversionTest.java:45)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@687080dc
+Print Response for testConvertFromDateToUnixTimeStamp : &lt;!DOCTYPE HTML PUBLIC &quot;-//IETF//DTD HTML 2.0//EN&quot;&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;
+&lt;script src=&quot;/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js&quot;&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;HTTP/1.1 503 Service Temporarily Unavailable&lt;/h1&gt;
+&lt;p&gt;Reason: The Requested URL /api/unix-timestamp-converter/ is Service Temporarily Unavailable.&lt;/p&gt;
+&lt;script&gt;(function(){var js = &quot;window[&apos;__CF$cv$params&apos;]={r:&apos;7c9913a24b38a956&apos;,m:&apos;5.d8uu_gCRi7PJxFiU_X3iF04L9dpX1W9Qtgm_oI06o-1684465091-0-AWK/eN8EqI2djk8q7AyHFNW/EylwytNMI2bSu8MCt+Yu&apos;,u:&apos;/cdn-cgi/challenge-platform/h/g&apos;};_cpo=document.createElement(&apos;script&apos;);_cpo.nonce=&apos;&apos;,_cpo.src=&apos;/cdn-cgi/challenge-platform/scripts/invisible.js&apos;,document.getElementsByTagName(&apos;head&apos;)[0].appendChild(_cpo);&quot;;var _0xh = document.createElement(&apos;iframe&apos;);_0xh.height = 1;_0xh.width = 1;_0xh.style.position = &apos;absolute&apos;;_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = &apos;none&apos;;_0xh.style.visibility = &apos;hidden&apos;;document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement(&apos;script&apos;);_0xj.nonce = &apos;&apos;;_0xj.innerHTML = js;_0xi.getElementsByTagName(&apos;head&apos;)[0].appendChild(_0xj);}}if (document.readyState !== &apos;loading&apos;) {handler();} else if (window.addEventListener) {document.addEventListener(&apos;DOMContentLoaded&apos;, handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== &apos;loading&apos;) {document.onreadystatechange = prev;handler();}};}})();&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+</system-out>
+  </testcase>
+  <testcase classname="api.test.UnixTimeConversionTest" name="testConvertFromUnixTimeStampToDate" time="0.776">
+    <failure message="expected [200] but found [509]" type="java.lang.AssertionError">java.lang.AssertionError: expected [200] but found [509]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:839)
+	at org.testng.Assert.assertEquals(Assert.java:849)
+	at api.test.UnixTimeConversionTest.testConvertFromUnixTimeStampToDate(UnixTimeConversionTest.java:69)
+</failure>
+    <system-out>Print Response for testConvertFromUnixTimeStampToDate : &lt;!DOCTYPE HTML PUBLIC -//IETF//DTD HTML 2.0//EN&gt;
+&lt;html&gt;&lt;head&gt;
+&lt;title&gt;503 Service Temporarily Unavailable&lt;/title&gt;
+&lt;script src=/cdn-cgi/apps/head/d68TQN-2Nl9xNJpFHLNJ6Jj2TPo.js&gt;&lt;/script&gt;&lt;/head&gt;&lt;body&gt;
+&lt;h1&gt;HTTP/1.1 503 Service Temporarily Unavailable&lt;/h1&gt;
+&lt;p&gt;Reason: The Requested URL /api/unix-timestamp-converter/ is Service Temporarily Unavailable.&lt;/p&gt;
+&lt;script&gt;(function(){var js = window[&apos;__CF$cv$params&apos;]={r:&apos;7c9913a8ca27a949&apos;,m:&apos;3uG_zuwWP83HMCRH1227V4BEocMfeE8aaqwlWvId7ic-1684465092-0-AaJhEmHJ1VIYK3ZHT1MNAX0uCuSFK7C7mrgylimrXLFr&apos;,u:&apos;/cdn-cgi/challenge-platform/h/g&apos;};_cpo=document.createElement(&apos;script&apos;);_cpo.nonce=&apos;&apos;,_cpo.src=&apos;/cdn-cgi/challenge-platform/scripts/invisible.js&apos;,document.getElementsByTagName(&apos;head&apos;)[0].appendChild(_cpo);;var _0xh = document.createElement(&apos;iframe&apos;);_0xh.height = 1;_0xh.width = 1;_0xh.style.position = &apos;absolute&apos;;_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = &apos;none&apos;;_0xh.style.visibility = &apos;hidden&apos;;document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement(&apos;script&apos;);_0xj.nonce = &apos;&apos;;_0xj.innerHTML = js;_0xi.getElementsByTagName(&apos;head&apos;)[0].appendChild(_0xj);}}if (document.readyState !== &apos;loading&apos;) {handler();} else if (window.addEventListener) {document.addEventListener(&apos;DOMContentLoaded&apos;, handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== &apos;loading&apos;) {document.onreadystatechange = prev;handler();}};}})();&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;
+</system-out>
+  </testcase>
+  <testcase classname="api.test.UnixTimeConversionTest" name="testInvalidDateString" time="0.775">
+    <failure message="Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html;charset=UTF-8&apos;." type="java.lang.IllegalStateException">java.lang.IllegalStateException: Cannot parse object because no supported Content-Type was specified in response. Content-Type was &apos;text/html;charset=UTF-8&apos;.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:72)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:105)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.mapping.ObjectMapping.deserialize(ObjectMapping.groovy:94)
+	at io.restassured.internal.mapping.ObjectMapping$deserialize.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:47)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+	at io.restassured.internal.RestAssuredResponseOptionsGroovyImpl.as(RestAssuredResponseOptionsGroovyImpl.groovy:226)
+	at io.restassured.internal.RestAssuredResponseOptionsImpl.as(RestAssuredResponseOptionsImpl.java:169)
+	at api.test.UnixTimeConversionTest.testInvalidDateString(UnixTimeConversionTest.java:83)
+</failure>
+  </testcase>
 </testsuite>

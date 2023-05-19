@@ -5,8 +5,11 @@
     <classes>
       <class name="api.test.UnixTimeConversionTest">
         <methods>
-          <include name="testConvertFromUnixTimeStampToDate"/>
+          <include name="testEmptyDateString"/>
+          <include name="testEmptyTimeStampString"/>
           <include name="setup"/>
+          <include name="testInvalidDateString"/>
+          <include name="testConvertFromDateToUnixTimeStamp"/>
         </methods>
       </class> <!-- api.test.UnixTimeConversionTest -->
     </classes>

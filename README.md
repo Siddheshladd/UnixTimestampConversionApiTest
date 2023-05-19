@@ -17,20 +17,23 @@ URL - https://helloacm.com/tools/unix-timestamp-converter/
 **Step 2 - Set up the project:**
 <br>
 -Ensure that Java and Maven are installed on the system.<br>
--Open the cloned project in your preferred IDE (such as Eclipse or IntelliJ).<br>
+-Open the cloned project in IDE Eclipse.<br>
 -Let the IDE import the project and its dependencies.<br>
--If needed, configure the JDK and Maven settings in your IDE.<br><br>
+-If needed, configure the JDK and Maven settings in your IDE.<br>
+<br>
 
 **Step 3 - Run the test suite:**
 <br>
 -Open the test class UnixTimeConversionTest.java in your IDE.<br>
 -Right-click on the class and select **"Run As"  -> TestNG ** option to execute the test suite.<br>
+-Another way is to Right-click on the TestNg.xml and select **"Run As"  -> TestNG ** option to execute the test suite.<br>
 
 
 Alternatively, you can run the test suite using Maven from the terminal:<br>
-**mvn clean test** <br>
+      
+      mvn clean test
 
 
-The tests will be executed, and the test results will be displayed in the console.
+The tests will be executed, and the test results can be viewed from **Test-output folder -> Unix Time Coversion Test Suite**,TestNg HTML report can be viewed in browser.
 <br><br>
-_Note - Ensure that the necessary dependencies and configurations are set up correctly on the new system to avoid any issues._
+_

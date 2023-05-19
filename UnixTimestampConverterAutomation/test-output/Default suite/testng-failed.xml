@@ -5,11 +5,11 @@
     <classes>
       <class name="api.test.UnixTimeConversionTest">
         <methods>
+          <include name="testNegativeTS"/>
           <include name="testEmptyDateString"/>
-          <include name="testEmptyTimeStampString"/>
+          <include name="testConvertFromUnixTimeStampToDate"/>
           <include name="setup"/>
           <include name="testInvalidDateString"/>
-          <include name="testConvertFromDateToUnixTimeStamp"/>
         </methods>
       </class> <!-- api.test.UnixTimeConversionTest -->
     </classes>

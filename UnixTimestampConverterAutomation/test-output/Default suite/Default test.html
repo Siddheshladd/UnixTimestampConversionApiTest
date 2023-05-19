@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/4/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri May 19 16:51:29 VUT 2023</td>
+<td>Started on:</td><td>Fri May 19 22:01:27 VUT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4644 ms)</td>
+<tr><td>Total time:</td><td>5 seconds (5415 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,14 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UnixTimeConversionTest.testConvertFromDateToUnixTimeStamp()'><b>testConvertFromDateToUnixTimeStamp</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Verify response, When a valid date is passed it returns the correct unix timestamp in response.</td>
+<td title='api.test.UnixTimeConversionTest.testConvertFromUnixTimeStampToDate()'><b>testConvertFromUnixTimeStampToDate</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Converting a Unix timestamp to Date string</td>
 <td><div><pre>java.lang.AssertionError: expected [200] but found [509]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:839)
 	at org.testng.Assert.assertEquals(Assert.java:849)
-	at api.test.UnixTimeConversionTest.testConvertFromDateToUnixTimeStamp(UnixTimeConversionTest.java:51)
+	at api.test.UnixTimeConversionTest.testConvertFromUnixTimeStampToDate(UnixTimeConversionTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -111,14 +111,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1911379471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1911379471'><pre>java.lang.AssertionError: expected [200] but found [509]
+</pre></div><a href='#' onClick='toggleBox("stack-trace266376067", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace266376067'><pre>java.lang.AssertionError: expected [200] but found [509]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:839)
 	at org.testng.Assert.assertEquals(Assert.java:849)
-	at api.test.UnixTimeConversionTest.testConvertFromDateToUnixTimeStamp(UnixTimeConversionTest.java:51)
+	at api.test.UnixTimeConversionTest.testConvertFromUnixTimeStampToDate(UnixTimeConversionTest.java:64)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -151,14 +151,14 @@ function toggleAllBoxes() {
 <td>1</td>
 <td>api.test.UnixTimeConversionTest@42a15bdc</td></tr>
 <tr>
-<td title='api.test.UnixTimeConversionTest.testEmptyDateString()'><b>testEmptyDateString</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Verify response, When an empty date parameter is passed it returns the current time</td>
-<td><div><pre>java.lang.AssertionError: expected [2023-51-19 04:51:33] but found [false]
+<td title='api.test.UnixTimeConversionTest.testEmptyDateString()'><b>testEmptyDateString</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Converting an empty date string</td>
+<td><div><pre>java.lang.AssertionError: expected [2023-01-19 10:01:32] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at api.test.UnixTimeConversionTest.testEmptyDateString(UnixTimeConversionTest.java:122)
+	at api.test.UnixTimeConversionTest.testEmptyDateString(UnixTimeConversionTest.java:112)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -187,14 +187,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1322341191", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1322341191'><pre>java.lang.AssertionError: expected [2023-51-19 04:51:33] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace2146285461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2146285461'><pre>java.lang.AssertionError: expected [2023-01-19 10:01:32] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
 	at org.testng.Assert.assertEquals(Assert.java:575)
 	at org.testng.Assert.assertEquals(Assert.java:585)
-	at api.test.UnixTimeConversionTest.testEmptyDateString(UnixTimeConversionTest.java:122)
+	at api.test.UnixTimeConversionTest.testEmptyDateString(UnixTimeConversionTest.java:112)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -227,13 +227,14 @@ function toggleAllBoxes() {
 <td>0</td>
 <td>api.test.UnixTimeConversionTest@42a15bdc</td></tr>
 <tr>
-<td title='api.test.UnixTimeConversionTest.testEmptyTimeStampString()'><b>testEmptyTimeStampString</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Verify response, When an empty Timestamp parameter is passed it returns the Current date Timestamp</td>
-<td><div><pre>java.lang.AssertionError: expected [2023-05-19T05:51:33.264526100Z] but found [false]
+<td title='api.test.UnixTimeConversionTest.testInvalidDateString()'><b>testInvalidDateString</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Converting an invalid date string format</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid Timestamp] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:563)
-	at api.test.UnixTimeConversionTest.testEmptyTimeStampString(UnixTimeConversionTest.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at api.test.UnixTimeConversionTest.testInvalidDateString(UnixTimeConversionTest.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -262,13 +263,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace174999703", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace174999703'><pre>java.lang.AssertionError: expected [2023-05-19T05:51:33.264526100Z] but found [false]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1482087396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1482087396'><pre>java.lang.AssertionError: expected [Invalid Timestamp] but found [false]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:563)
-	at api.test.UnixTimeConversionTest.testEmptyTimeStampString(UnixTimeConversionTest.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at api.test.UnixTimeConversionTest.testInvalidDateString(UnixTimeConversionTest.java:86)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -298,17 +300,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>1</td>
+<td>0</td>
 <td>api.test.UnixTimeConversionTest@42a15bdc</td></tr>
 <tr>
-<td title='api.test.UnixTimeConversionTest.testInvalidDateString()'><b>testInvalidDateString</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Verify response, When a invalid date/Timestamp is passed it returns the Error Message</td>
-<td><div><pre>java.lang.AssertionError: expected [400] but found [509]
+<td title='api.test.UnixTimeConversionTest.testNegativeTS()'><b>testNegativeTS</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Converting a Unix timestamp with a negative value</td>
+<td><div><pre>java.lang.AssertionError: expected [Invalid Timestamp] but found [&quot;1924-01-01 09:56:38&quot;]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:839)
-	at org.testng.Assert.assertEquals(Assert.java:849)
-	at api.test.UnixTimeConversionTest.testInvalidDateString(UnixTimeConversionTest.java:95)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at api.test.UnixTimeConversionTest.testNegativeTS(UnixTimeConversionTest.java:136)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -337,14 +339,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace840008200", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace840008200'><pre>java.lang.AssertionError: expected [400] but found [509]
+</pre></div><a href='#' onClick='toggleBox("stack-trace1690221909", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690221909'><pre>java.lang.AssertionError: expected [Invalid Timestamp] but found [&quot;1924-01-01 09:56:38&quot;]
 	at org.testng.Assert.fail(Assert.java:97)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:136)
 	at org.testng.Assert.assertEquals(Assert.java:118)
-	at org.testng.Assert.assertEquals(Assert.java:839)
-	at org.testng.Assert.assertEquals(Assert.java:849)
-	at api.test.UnixTimeConversionTest.testInvalidDateString(UnixTimeConversionTest.java:95)
+	at org.testng.Assert.assertEquals(Assert.java:575)
+	at org.testng.Assert.assertEquals(Assert.java:585)
+	at api.test.UnixTimeConversionTest.testNegativeTS(UnixTimeConversionTest.java:136)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -385,9 +387,9 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='api.test.UnixTimeConversionTest.testConvertFromUnixTimeStampToDate()'><b>testConvertFromUnixTimeStampToDate</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Verify response, When a valid Timestamp is passed it returns the correct Date String in response.</td>
+<td title='api.test.UnixTimeConversionTest.testConvertFromDateToUnixTimeStamp()'><b>testConvertFromDateToUnixTimeStamp</b><br>Test class: api.test.UnixTimeConversionTest<br>Test method: Converting a valid date string to a Unix timestamp</td>
 <td></td>
-<td>0</td>
+<td>1</td>
 <td>api.test.UnixTimeConversionTest@42a15bdc</td></tr>
 </table><p>
 </body>
